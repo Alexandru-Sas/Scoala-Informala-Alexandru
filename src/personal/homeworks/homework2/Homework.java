@@ -33,7 +33,7 @@ public class Homework {
             System.out.println(numarOriginal + " nu este palindrom.");
 
 
-        return numarOriginal;
+        return 0;
     }
 
     public static int getPrimeNumber() {
@@ -65,7 +65,7 @@ public class Homework {
                 min = a[i];
         }
 
-        System.out.println("Cel mai mic numar dina array este " + min);
+        System.out.println("Cel mai mic numar din array este " + min);
 
         return min;
 

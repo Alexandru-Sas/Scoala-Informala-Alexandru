@@ -4,7 +4,6 @@ public class primeNumber {
     public static void main(String[] args) {
         int valoareaMica = 2;
         int valoareaMare = 20;
-
         while (valoareaMica < valoareaMare){
             boolean prim = false;
 

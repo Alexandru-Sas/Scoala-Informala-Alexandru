@@ -7,7 +7,6 @@ public class palindrome {
 
         numarOriginal = number1;
 
-
         while (number1 != 0) {
             rest = number1 % 10;
             inapoiNumber = inapoiNumber * 10 + rest;

@@ -8,6 +8,7 @@ public class smallestNumbArray {
             if (a[i] < min)
                 min = a[i];
         }
+
         System.out.println("Cel mai mic numar din array este " + min);
     }
 }

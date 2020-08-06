@@ -1,6 +1,4 @@
 package personal.homeworks.homework2;
-
-
 public class Homework {
     public static int getMaxDigit(int n) {
         int max = n % 10;// 3
@@ -13,74 +11,57 @@ public class Homework {
         return max;
     }
 
-    public static int getPalindrome() {
-        int n = 1234321;
-        int inversat = 0;
-        int rest;
-        int numarOriginal;
-        numarOriginal = n;
+    public static boolean isPalindrome(int n ) {
+         int original = n;
+        int mirror = 0;
+        int remainder;
+
 
         while (n != 0) {
-            rest = n % 10;
-            inversat = inversat * 10 + rest;
+            remainder = n % 10;
+            mirror = mirror * 10 + remainder;
             n = n / 10;
         }
 
-
-        if (numarOriginal == inversat)
-            System.out.println(numarOriginal + " este palindrom.");
-        else
-            System.out.println(numarOriginal + " nu este palindrom.");
-
-
-        return 0;
+        return mirror == original;
     }
 
-    public static int getPrimeNumber() {
-        int valoareaMica = 2;
-        int valoareaMare = 20;
-        while (valoareaMica < valoareaMare) {
-            boolean prim = false;
+    public static int getPrimeNumber(int lowValue,int highValue) {
 
-            for (int i = 2; i <= valoareaMica / 2; i++) {
-                if (valoareaMica % i == 0) {
-                    prim = true;
+        while (lowValue < highValue) {
+            boolean prime = false;
+
+            for (int i = 2; i <= lowValue / 2; i++) {
+                if (lowValue % i == 0) {
+                    prime = true;
                     break;
                 }
             }
-            if (!prim && valoareaMica != 0 && valoareaMica != 1)
-                System.out.println(valoareaMica + " ");
+            if (!prime && lowValue != 0 && lowValue != 1)
+                System.out.println(lowValue + " ");
 
-            ++valoareaMica;
+            ++lowValue;
         }
 
-        return valoareaMica;
+        return lowValue;
     }
 
-    public static int getSmallestNumbArray() {
-        int[] a = new int[]{13, 14, 17, 21, 3, 9, 2, 8};
+    public static int getMinFromArray(int[] a) {
+
         int min = a[0];
         for (int i = 0; i < a.length; i++) {
-            if (a[i] < min)
+            if (a[i] < min) {
                 min = a[i];
+            }
         }
-
-        System.out.println("Cel mai mic numar din array este " + min);
 
         return min;
 
     }
 
-    public static int getSumOfFirst100() {
-        int n = 100;
-        int sum = 0;
-        for (int i = 1; i <= n; i++) {
-            sum = sum + i;
+    public static int getSumOfFirst100(int n) {
 
-
-        }
-
-        return sum;
+        return (n/2)*(1+n) ;
     }
 }
 

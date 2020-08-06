@@ -16,9 +16,7 @@ public class Main {
 
         System.out.println(Homework.getMinFromArray(new int[]{88,21,23,24,21,45,87,43,121,432}));
 
-
-
-        System.out.println(Homework.getSumOfFirst100(100));
+        System.out.println(Homework.getSumOfFirstN(100));
 
 
 

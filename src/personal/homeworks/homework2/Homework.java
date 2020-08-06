@@ -59,7 +59,7 @@ public class Homework {
 
     }
 
-    public static int getSumOfFirst100(int n) {
+    public static int getSumOfFirstN(int n) {
 
         return (n/2)*(1+n) ;
     }

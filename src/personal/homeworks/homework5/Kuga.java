@@ -2,7 +2,7 @@ package personal.homeworks.homework5;
 
 public class Kuga extends Ford {
     public Kuga(float availableFuel, int tireSize, String chassisNumber) {
-        super(75, FuelType.DIESEL, 5, 9, availableFuel, tireSize, chassisNumber, 0, "Kuga");
+        super(75, FuelType.DIESEL, 6, 9, availableFuel, tireSize, chassisNumber, 0, "Kuga");
     }
 
 

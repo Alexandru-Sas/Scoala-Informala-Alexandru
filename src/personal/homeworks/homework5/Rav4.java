@@ -1,8 +1,8 @@
 package personal.homeworks.homework5;
 
-public class Kuga extends Ford {
-    public Kuga(float availableFuel, int tireSize, String chassisNumber) {
-        super(75, FuelType.DIESEL, 5, 9, availableFuel, tireSize, chassisNumber, 0, "Kuga");
+public class Rav4 extends Toyota{
+    public Rav4(float availableFuel, int tireSize, String chassisNumber) {
+        super(75, FuelType.DIESEL, 6, 7, availableFuel, tireSize, chassisNumber, 0, "Rav4");
     }
 
 

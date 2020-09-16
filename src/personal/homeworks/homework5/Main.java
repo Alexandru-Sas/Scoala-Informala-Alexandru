@@ -13,6 +13,25 @@ public class Main {
         kuga.stop();
         kuga.start();
 
+        System.out.println("");
+        Car mustang = new Mustang(50,20, "123123dfsdf234214");
+        mustang.start();
+        mustang.shiftGear(1);
+        mustang.drive(1);
+        mustang.shiftGear(2);
+        mustang.drive(2);
+        mustang.shiftGear(3);
+        mustang.drive(1);
+        mustang.shiftGear(4);
+        mustang.drive(2);
+        mustang.shiftGear(5);
+        mustang.drive(1);
+        mustang.shiftGear(6);
+        mustang.drive(1);
+        mustang.drive(50);
+        mustang.stop();
+        mustang.start();
+
 
 
 

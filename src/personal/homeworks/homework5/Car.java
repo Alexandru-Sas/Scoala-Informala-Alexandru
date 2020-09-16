@@ -28,7 +28,6 @@ abstract class Car implements Vehicle {
 
     public void shiftGear(int gear) {
         this.currentGear = gear;
-        System.out.println("Car shifted in gear " + gear);
     }
 
     @Override
